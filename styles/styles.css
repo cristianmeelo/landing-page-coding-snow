@@ -49,6 +49,9 @@
 .landing__header a:hover {
   background: #05A63D;
 }
+.landing__header__label {
+  display: none;
+}
 .landing__content {
   max-width: 650px;
   margin: 60px 100px;
@@ -104,4 +107,63 @@
 }
 .landing__footer a:hover {
   transform: scale(1.5);
+}
+
+#check {
+  z-index: 3;
+  display: none;
+}
+
+/* Responsive Styles*/
+@media (max-width: 960px) {
+  .landing__header__navigation {
+    display: none;
+  }
+  .landing__header__navigation #check:checked {
+    z-index: 2;
+    position: fixed;
+    background: rgba 114, 223, 255, 0.9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+  }
+  .landing__header__label {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+  .landing__header__label:hover {
+    color: #fff;
+  }
+  .landing__header__label .fa-times {
+    display: none;
+  }
+  .landing__content h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .landing__content h2 span {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .landing__content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 560px) {
+  .landing__content h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .landing__content h2 span {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .landing__content p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */
