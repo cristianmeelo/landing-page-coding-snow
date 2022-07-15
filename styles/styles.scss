@@ -1,35 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-%configure-position {
+* {
     margin: 0;
     padding: 0;
     box-sizing: none;
-    font-family:" Poppins", sans-serif;
+    font-family:"Poppins", sans-serif;
 }
 
 .landing {
-    @extend %configure-position;
-    margin: 0;
-    padding: 0;
-    box-sizing: none;
-    font-family:" Poppins", sans-serif;
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: url(../images/bg.png)no-repeat;
-    background-size: cover;
+    background: url(../images/bg.jpeg)no-repeat;
+    background-size:cover;
     background-position: center;
+    color: black;
 
     &__header {
         position: relative;
         top: 0;
-        width: 100%;
+        width: 80%;
         padding: 30px 100px;
         display:flex;
         justify-content: space-between;
         align-items: center;
-        
+
+            &__logo {
+                position: relative;
+                color: black;
+                font-size: 30px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 1px;
+            }
+
+            &__navigation a{
+                color: #000;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding: 2px 15px;
+                border-radius: 20px;
+                transition: 0.3s;
+                transition-property: background;
+            }
+
+            &__navigation a:hover{
+                background: #05A63D;
+            }
+        }
+
+        &__content  {
+            max-width: 650px;
+            margin: 60px 100px;
+        }
+
+        &__content h2 {
+            font-weight: bolder;
+            color: #05A63D;
+            font-size: 55px;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        &__content h2 span {
+            color:black;
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        &__content  p{
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+        }
     }
-}
