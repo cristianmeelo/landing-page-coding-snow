@@ -1,0 +1,22 @@
+.landing {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  font-family: " Poppins", sans-serif;
+}
+
+.landing {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  font-family: " Poppins", sans-serif;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(../images/bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=syles.css.map */
