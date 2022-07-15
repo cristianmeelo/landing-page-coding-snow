@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(../images/bg.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+.landing__header {
+  position: relative;
+  top: 0;
+  width: 80%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing__header__logo {
+  position: relative;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.landing__header__navigation a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+.landing__header__navigation a:hover {
+  background: #05A63D;
+}
+.landing__content {
+  max-width: 650px;
+  margin: 60px 100px;
+}
+.landing__content h2 {
+  font-weight: bolder;
+  color: #05A63D;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.landing__content h2 span {
+  color: black;
+  font-size: 50px;
+  font-weight: 600;
+}
+.landing__content p {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
